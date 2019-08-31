@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+	</head>
+	<body>
+		<!-- 头标题 -->
+		<h1 id="title">Survey Form</h1>
+		<!-- 头标题下表单内容 -->
+		<div id="form-outer">
+			<p id="description">Let us know how we can improve freeCodeCamp</p>
+			<!-- 表单内容 -->
+			<form id="survey-form" action="#" method="get">
+				<!-- 姓名 -->
+				<div class="rowTab">
+					<div class="labels">
+						<label id="name-label">*name:</label>
+						<!-- label 元素不会向用户呈现任何特殊效果。
+						不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。
+						就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。 -->
+					</div>
+					<div class="rightTab">
+						<input autofocus="autofocus" type="text" name="name" class="input-field" required="required" placeholder="Enter your Name" />
+					</div>
+				</div>
+				<!-- Emil -->
+				<div class="rowTab">
+					<div class="labels">
+						<label id="emil-label" for="emil">*Emil:</label>
+					</div>
+					<div class="rightTab">
+						<input autofocus="autofocus" type="email" name="emil" class="input-field" required="required" placeholder="Enter your Emil" />
+					</div>
+				</div>
+				<!-- 年龄 -->
+				<div class="rowTab">
+					<div class="labels">
+						<label id="number-label" for="age">*Age:</label>
+					</div>
+					<div class="rightTab">
+						<input autofocus="autofocus" type="number" name="number" min="1" max="125" class="input-field" required="required"
+						 placeholder="Enter your Age" />
+					</div>
+				</div>
+				<!-- 下拉列表 -->
+				<div class="rowTab">
+					<div class="labels">
+						<label for="currentPos">Which option best describes your current role?</label>
+					</div>
+					<div class="rightTab">
+						<select name="currentPos" id="dropdown" class="dropdown">
+							<option disabled value>Select an option</option>
+							<option value="student">Student</option>
+							<option value="job">Time job</option>
+							<option value="learner">Full time learner</option>
+							<option value="preferNo">Prefer not to say</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+				<!-- 单选框 -->
+				<div class="rowTab">
+					<div class="labels">
+						<label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+					</div>
+					<div class="rightTab">
+						<ul style="list-style: none;">
+							<li class="radio">
+								<label>
+									<input type="radio" name="radio-buttons" class="userRating" value="1" />
+									Definitely
+								</label>
+							</li>
+							<li class="radio">
+								<label>
+									<input type="radio" name="radio-buttons" class="userRating" value="1" />
+									Maybe
+								</label>
+							</li>
+							<li class="radio">
+								<label>
+									<input type="radio" name="radio-buttons" class="userRating" value="1" />
+									Not sure
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 第二个下拉列表 -->
+					<div class="rowTab">
+					<div class="labels">
+						<label for="most-like">What do you like most in FCC:</label>
+					</div>
+					<div class="rightTab">
+						<select name="mostlike" id="most-like" class="dropdown">
+							<option disabled value>Select an option</option>
+							<option value="challenges">Challenges</option>
+							<option value="project">Project</option>
+							<option value="community">Community</option>
+							<option value="openSource">OpenSource</option>
+						</select>
+					</div>
+				</div>
+				<!-- 复选框 -->
+					<div class="rowTab">
+					<div class="labels">
+						<label for="preferences">Things that should be improved in the future<br />
+(Check all that apply):</label>
+					</div>
+					<div class="rightTab">
+						<ul id="preferences" style="list-style: none;">
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Front-end Projects
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Back-end Projects
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Data Visualization
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Challenges
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Open Source Community
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Gitter help rooms
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Videos
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									City Meetups
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Wiki
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Forum
+								</label>
+							</li>
+								<li class="checkbox">
+								<label>
+									<input type="checkbox" name="prefer" class="userRating" value="1" />
+									Additional Courses
+								</label>
+							</li>
+					</div>
+				</div>
+				<!-- 留言框 -->
+				<div class="rowTab">
+					<div class="labels">
+						<label for="comments">Any Comments or Suggestions?</label>
+					</div>
+					<div class="rightTab">
+						<textarea id="comments" class="input-field" style="height: 50px;resize: vertical;" name="comment" 
+						placeholder="Enter your comment here..." />	
+						</textarea>
+					</div>
+				</div>
+				<button id="submit" type="submit">submit</button>
+			</form>
+		</div>
+	</body>
+</html>
